@@ -37,7 +37,7 @@ jobs:
           for t in $(python -c "import json; print(' '.join(json.load(open('site.json'))['types']))"); do
             gh release download "$RELEASE_TAG" -R "$RELEASE_REPO" -D dl -p "hourly-$t.parquet"
           done
-          cd dl && grep -E ' hourly-[A-Za-z]+\.parquet$' SHA256SUMS.txt | while read -r sum name; do
+          cd dl && tr -d '\r' < SHA256SUMS.txt | grep -E ' hourly-[A-Za-z]+\.parquet$' | while read -r sum name; do
             [ -f "$name" ] && echo "$sum  $name"; done | sha256sum -c -
       - name: Split into one file per context
         run: |
