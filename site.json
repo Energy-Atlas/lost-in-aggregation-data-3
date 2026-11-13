@@ -1,0 +1,12 @@
+{
+  "name": "lost-in-aggregation-data-3",
+  "url": "https://energy-atlas.github.io/lost-in-aggregation-data-3/",
+  "release": "Energy-Atlas/lost-in-aggregation data-v1.0.0",
+  "types": [
+    "LP",
+    "LargeOffice",
+    "PP",
+    "GB",
+    "HighriseApartment"
+  ]
+}

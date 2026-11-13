@@ -1,0 +1,16 @@
+Lost in Aggregation? Data release 1.0.0
+Copyright (c) 2026 Chengxuan Li, Zihan Jimmy Wang, Timur Dogan, Environmental Systems Lab, Cornell University
+
+This dataset is licensed under the Creative Commons Attribution 4.0 International licence (CC BY 4.0).
+You may share and adapt it for any purpose, provided you give appropriate credit, link to the licence,
+and indicate if changes were made.
+
+Licence summary: https://creativecommons.org/licenses/by/4.0/
+Legal code:      https://creativecommons.org/licenses/by/4.0/legalcode
+
+Suggested credit:
+Li, C., Wang, Z. J., & Dogan, T. (2026). Lost in Aggregation? The Diminishing Returns of Geometric Fidelity and
+Thermal Zoning Details in Urban-Scale Building Energy Simulations. ASIM 2026 poster, data release 1.0.0.
+https://energy-atlas.github.io/lost-in-aggregation/
+
+The data are comparative EnergyPlus simulation results, provided as is, without warranty of any kind.
