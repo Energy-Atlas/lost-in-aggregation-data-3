@@ -38,7 +38,7 @@ jobs:
             gh release download "$RELEASE_TAG" -R "$RELEASE_REPO" -D dl -p "hourly-$t.parquet"
           done
           cd dl && tr -d '\r' < SHA256SUMS.txt | grep -E ' hourly-[A-Za-z]+\.parquet$' | while read -r sum name; do
-            [ -f "$name" ] && echo "$sum  $name"; done | sha256sum -c -
+            if [ -f "$name" ]; then echo "$sum  $name"; fi; done | sha256sum -c -
       - name: Split into one file per context
         run: |
           python split.py dl public
